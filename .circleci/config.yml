@@ -1,6 +1,7 @@
 version: 2.1
 orbs:
   browser-tools: circleci/browser-tools@1.2.3
+  cypress: cypress-io/cypress@3
 jobs:
   build:
     docker:
@@ -22,3 +23,7 @@ jobs:
           paths:
             - "node_modules"
       - run: npm run build
+  cypress/run:
+    cypress-command: npx cypress run --browser chrome
+    install-browsers: true
+    start-command: npm run start
