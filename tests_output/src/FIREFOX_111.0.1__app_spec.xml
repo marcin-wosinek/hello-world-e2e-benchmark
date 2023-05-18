@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<testsuites errors="0"
+            failures="0"
+            tests="1">
+
+  <testsuite name="src.app_spec"
+    errors="0" failures="0" hostname="" id="" package="src" skipped="0"
+    tests="1" time="4.115" timestamp="">
+  
+    <testcase name="Sample test nightwatchjs.org" classname="src.app_spec" time="0.8210" assertions="5">
+
+    
+
+    
+
+    
+
+    
+
+    
+    </testcase>
+  
+
+  
+
+    
+
+  
+  </testsuite>
+</testsuites>

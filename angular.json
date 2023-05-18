@@ -94,6 +94,34 @@
             ],
             "scripts": []
           }
+        },
+        "nightwatch-run": {
+          "builder": "@nightwatch/schematics:nightwatch",
+          "options": {
+            "devServerTarget": "hello-world-e2e-benchmark:serve",
+            "tsConfig": "../nightwatch/tsconfig.e2e.json",
+            "config": "./nightwatch.conf.js",
+            "env": "firefox"
+          },
+          "configurations": {
+            "production": {
+              "devServerTarget": "hello-world-e2e-benchmark:serve:production"
+            }
+          }
+        },
+        "e2e": {
+          "builder": "@nightwatch/schematics:nightwatch",
+          "options": {
+            "devServerTarget": "hello-world-e2e-benchmark:serve",
+            "tsConfig": "../nightwatch/tsconfig.e2e.json",
+            "config": "./nightwatch.conf.js",
+            "env": "firefox"
+          },
+          "configurations": {
+            "production": {
+              "devServerTarget": "hello-world-e2e-benchmark:serve:production"
+            }
+          }
         }
       }
     }
